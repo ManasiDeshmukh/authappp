@@ -1,0 +1,15 @@
+doctype html 
+html 
+    head 
+        title Jade Page
+    body 
+        h1 Hello user 
+        p welcome to my page
+        ul  
+            -for(var i=0;i<10;i++){
+                li welcome
+            -}
+        - var items=["coffe",'tea']
+        ul 
+            -for name in items 
+                li #{name}
